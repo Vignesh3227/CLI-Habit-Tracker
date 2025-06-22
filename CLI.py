@@ -16,8 +16,8 @@ def get_choice():
         print("Invalid choice. Enter number from 1 to 6.")
         return get_choice()
 
-def get_date_input(prompt):
-    date=input(prompt).strip()
+def get_date_input(dte):
+    date=input(dte).strip()
     if not date:
         return datetime.today().strftime(HabitTracker.DATE_FORMAT)
     try:
